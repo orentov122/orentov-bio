@@ -1,6 +1,7 @@
 body {
     background-color: black;
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 .orentov {
@@ -17,12 +18,11 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: auto;
-    width: 100%;
+    margin: 20px auto;
+    width: 90%;
     max-width: 500px;
     height: 300px;
     border-radius: 15px;
-    margin-bottom: 30px;
 }
 
 .nickname {
@@ -42,40 +42,61 @@ body {
     background-color: #1b1b1b;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 20px auto;
     width: 200px;
     height: 90px;
     border-radius: 15px;
-    margin-bottom: 30px;
 }
 
-.lc,.lcc{
+
+.lc, .lcc {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
     background-color: #1858b8;
-    width: 180px;
-    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    transition: all 0.3s ease; 
 }
+
+.lc {
+    width: 180px;
+    height: 45px;
+}
+
+.lcc {
+    width: 180px;
+    height: 45px;
+}
+
+
+.lc:hover, .lcc:hover {
+    transform: translateY(-5px);
+    background-color: #156bce;
+    box-shadow: 0 5px 15px rgba(21, 107, 206, 0.4);
+}
+
+.lc:hover { width: 190px; }
+.lcc:hover { width: 210px; }
 
 .orentov-shop {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin: auto;
+    margin: 20px auto;
     color: #fff;
     text-align: center;
     background-color: #1b1b1b;
-     width: 100%;
+    width: 90%;
     max-width: 500px;
-    height: 300px;
+    height: auto;
+    min-height: 300px;
     padding: 25px;
     border-radius: 15px;
+    box-sizing: border-box;
 }
 
 .orentov_spg {
@@ -94,16 +115,3 @@ body {
     color: #bdbdbd;
     margin: 0;
 }
-.lcc:hover {
- transform: translateY(-5px);
- width: 200px;
- height: 45px;
- background-color: #156bce;
-}
-.lc:hover {
- transform: translateY(-5px);
- width: 150px;
- height: 45px;
- background-color: #156bce;
-}
-
