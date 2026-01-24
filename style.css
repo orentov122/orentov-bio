@@ -106,11 +106,16 @@ body {
 }
 .kotik {
     display: none;
+    position: absolute;
     background-color: #156bce;
     width: 30px;
-    display: none;
-    margin:auto;
+    height: 30px;
+    border-radius: 50%;
+    top: 40px;
+    right: 175px;
+    z-index: 10;
 }
+
 
 
 
