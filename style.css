@@ -71,8 +71,9 @@ body {
     color: #fff;
     text-align: center;
     background-color: #1b1b1b;
-    width: 100%;
-    max-width: 600px;
+     width: 100%;
+    max-width: 500px;
+    height: 300px;
     padding: 25px;
     border-radius: 15px;
 }
@@ -105,3 +106,4 @@ body {
  height: 45px;
  background-color: #156bce;
 }
+
