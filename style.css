@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.orentov {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.avatar-selection {
+    display: flex;
+    background-color: #1b1b1b;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.nickname {
+    font-size: 32px;
+    color: #fff;
+    margin: 10px 0 0;
+}
+
+.username {
+    font-size: 12px;
+    color: #8b8b8b;
+    margin: 5px 0 0;
+}
+
+.link-dm {
+    display: flex;
+    background-color: #1b1b1b;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 200px;
+    height: 90px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.lc,.lcc{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #1858b8;
+    width: 180px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.orentov-shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    background-color: #1b1b1b;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.orentov_spg {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.shop-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.shop-desc {
+    font-size: 14px;
+    color: #bdbdbd;
+    margin: 0;
+}
+.lcc:hover {
+ transform: translateY(-5px);
+ width: 200px;
+ height: 45px;
+ background-color: #156bce;
+}
+.lc:hover {
+ transform: translateY(-5px);
+ width: 150px;
+ height: 45px;
+ background-color: #156bce;
+}
