@@ -104,3 +104,10 @@ body {
     color: #bdbdbd;
     margin: 0;
 }
+.kotik {
+    display: none;
+    background-color: #156bce;
+    width: 10px;
+    display: none;
+}
+
