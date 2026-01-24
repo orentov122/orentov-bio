@@ -4,17 +4,8 @@ body {
     margin: 0;
 }
 
-.orentov {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
-}
-
 .avatar-selection {
-    position: relative; /* Обязательно для привязки координат .kotik */
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,20 +19,29 @@ body {
     border-radius: 15px;
 }
 
-.kotik {
+.orentov {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
     display: block;
+}
+
+.kotik {
     position: absolute;
     background-color: #156bce;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    
-
-    top: 25px; 
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: 55px; 
     z-index: 10;
+    
+    /* Центрируем относительно родителя и смещаем на фото */
+    top: 35px; 
+    left: 50%;
+    transform: translateX(40px); /* Подвинь это значение (px), чтобы сел точно на кота */
+    
+    display: block; 
+    opacity: 0; /* Делает невидимым, но оставляет рабочим для JS */
 }
 
 .nickname {
@@ -84,7 +84,6 @@ body {
 .lc:hover, .lcc:hover {
     background-color: #156bce;
     box-shadow: 0 5px 15px rgba(21, 107, 206, 0.4);
-    /* Заменил изменение width на scale, чтобы верстка не прыгала */
     transform: translateY(-5px) scale(1.05);
 }
 
@@ -121,10 +120,3 @@ body {
     color: #bdbdbd;
     margin: 0;
 }
-
-
-
-
-
-
-
