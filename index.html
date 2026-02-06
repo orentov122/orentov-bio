@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIO</title>
     <link rel="stylesheet" href="style.css">
+        <script src="html guard/html-guard.js"></script>
 </head>
 <body>
-   <div class="avatar-selection">
-    <div class="kotik" id="kotik"></div> 
-    
-    <img src="img/orentov.jpg" alt="orentov" class="orentov">
-    <h3 class="nickname">orentov | #it</h3>
-    <h4 class="username">@vkozul</h4>
-</div>
+    <video autoplay muted loop id="bgVideo">
+    <source src="backprofile.mp4" type="video/mp4">
+  </video>
+    <div class="kotik" id="kotik">выавыавы</div>
+    <div class="avatar-selection">
+        <img src="img/orentov.jpg" alt="Нету нихуя" class="orentov">
+        <h3 class="nickname">orentov | #it</h3>
+        <h4 class="username">@vkozul</h4>
+    </div>
     <div class="link-dm">
-        <a href="https://t.me/vkozul" class="lc">Написать в лс</a>
+        <a href="vkozul.t.me" class="lc">Написать в лс</a>
     </div>
     <div class="projects-info">
         <h2 title="project-title">
@@ -35,13 +38,7 @@ const avatar = document.querySelector(".orentov");
 avatar.addEventListener("mouseenter", () => {
     alert("Мяу, мяу");
 });
-        avatar.addEventListener("onclick", () => {
-    alert("Ай,ай не бей меня пожалуйста.");
-});
     </script>
+
 </body>
 </html>
-
-
-
-
