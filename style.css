@@ -1,22 +1,55 @@
 body {
-    background-color: black;
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-.avatar-selection {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #1b1b1b;
-    text-align: center;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 500px;
-    height: 300px;
+    align-items: center; /* центр по горизонтали */
+    justify-content: flex-start; /* сверху вниз, можно заменить на center */
+    gap: 30px; /* равный отступ между блоками */
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 0; /* отступ сверху/снизу */
+    background-color: black;
+    font-family: Arial, sans-serif;
+    position: relative;
+    background: -webkit-linear-gradient(225deg, rgb(11, 103, 99) 20%, rgb(19, 79, 88) 83%, rgb(30, 127, 191));
+background: -moz-linear-gradient(225deg, rgb(11, 103, 99) 20%, rgb(19, 79, 88) 83%, rgb(30, 127, 191));
+background: linear-gradient(225deg, rgb(11, 103, 99) 20%, rgb(19, 79, 88) 83%, rgb(30, 127, 191));
+}
+
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.project-title {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+}
+.avatar-selection,
+.link-dm,
+.orentov-shop {
+    width: 100%;
+    max-width: 600px;
     border-radius: 15px;
+    background-color: rgba(27,27,27,0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .orentov {
@@ -24,24 +57,20 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
+    margin: auto;
 }
 
-.kotik {
-    position: absolute;
-    background-color: #156bce;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    z-index: 10;
-    
-    /* Центрируем относительно родителя и смещаем на фото */
-    top: 35px; 
-    left: 50%;
-    transform: translateX(40px); /* Подвинь это значение (px), чтобы сел точно на кота */
-    
-    display: block; 
-    opacity: 0; /* Делает невидимым, но оставляет рабочим для JS */
+.avatar-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #1b1b1b;
+    margin: auto 0 30px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 15px;
 }
 
 .nickname {
@@ -58,33 +87,36 @@ body {
 
 .link-dm {
     display: flex;
-    background-color: #1b1b1b;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    background-color: #1b1b1b;
+    margin: 0 auto 30px;
     width: 200px;
     height: 90px;
     border-radius: 15px;
 }
 
 .lc, .lcc {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    background-color: #1858b8;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #1858b8;
     border-radius: 10px;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     width: 180px;
     height: 45px;
+    transition: all 0.2s ease;
+-webkit-box-shadow: 14px 0px 1px 2px rgba(34, 60, 80, 0.37);
+-moz-box-shadow: 14px 0px 1px 2px rgba(34, 60, 80, 0.37);
+box-shadow: 14px 0px 1px 2px rgba(34, 60, 80, 0.37);
 }
 
 .lc:hover, .lcc:hover {
+    transform: translateY(-5px);
+    width: 200px;
     background-color: #156bce;
-    box-shadow: 0 5px 15px rgba(21, 107, 206, 0.4);
-    transform: translateY(-5px) scale(1.05);
 }
 
 .orentov-shop {
@@ -92,16 +124,14 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin: 20px auto;
+    margin: auto 0 30px;
     color: #fff;
     text-align: center;
     background-color: #1b1b1b;
-    width: 90%;
-    max-width: 500px;
-    min-height: 300px;
+    width: 100%;
+    max-width: 600px;
     padding: 25px;
     border-radius: 15px;
-    box-sizing: border-box;
 }
 
 .orentov_spg {
@@ -119,4 +149,11 @@ body {
     font-size: 14px;
     color: #bdbdbd;
     margin: 0;
+}
+
+.kotik {
+    display: none;
+    background-color: #156bce;
+    width: 10px;
+    height: 10px;
 }
